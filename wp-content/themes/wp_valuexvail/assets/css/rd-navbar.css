@@ -150,6 +150,7 @@
 .rd-navbar-static .rd-navbar-nav {
   display: block;
   text-align: left;
+  margin: 0
 }
 
 .rd-navbar-static .rd-navbar-nav li.rd-navbar--has-dropdown {
@@ -188,15 +189,19 @@
 
 .rd-navbar-static .rd-navbar-nav > li > a {
   display: block;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 26px;
-  padding: 18px 16px;
-  text-transform: uppercase;
+  color: #303030;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  padding: 0 7px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .rd-navbar-static .rd-navbar-nav > li.active > a, .rd-navbar-static .rd-navbar-nav > li.opened > a, .rd-navbar-static .rd-navbar-nav > li.focus > a, .rd-navbar-static .rd-navbar-nav > li > a:hover {
-  color: #fff;
+  color: #1e508c;
 }
 
 .rd-navbar-fixed .rd-navbar-toggle {
@@ -285,9 +290,14 @@
 }
 
 div#rd-navbar-nav-wrap-1 {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav.rd-navbar.rd-navbar-minimal.rd-navbar-original.rd-navbar-static.rd-navbar--is-stuck div#rd-navbar-nav-wrap-1{
     background: #275891;
 }
-
 .rd-navbar-fixed .rd-navbar-nav {
   display: block;
   height: 100%;
@@ -756,7 +766,7 @@ div#rd-navbar-nav-wrap-1 {
 * @description  Describes style declarations for RD Navbar panel
 */
 .rd-navbar-static .rd-navbar-panel {
-  padding: 50px 0;
+  padding: 15px 0;
 }
 
 .rd-navbar-static .rd-navbar-panel:before, .rd-navbar-static .rd-navbar-panel:after {
@@ -1095,4 +1105,10 @@ button.rd-navbar-toggle.toggle-original:focus {
   transform: rotate(0deg) scale(1);
   opacity: 1;
   visibility: visible;
+}
+.rd-navbar-nav-wrap.toggle-original-elements.active{
+  background: #1e508c;
+}
+.rd-navbar-nav-wrap.toggle-original-elements.active ul#primary {
+  padding: 25px 0 0 0;
 }

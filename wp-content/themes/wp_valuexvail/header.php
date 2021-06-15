@@ -10,7 +10,7 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-	<section id="main" class="row site-main">
+	<section id="main" class="site-main">
         <div class="container-fluid">
             <div class="container">
                 <header>
